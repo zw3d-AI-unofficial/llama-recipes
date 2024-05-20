@@ -1,0 +1,795 @@
+[
+    {
+        "predictions": [
+            "ZW3D Concepts",
+            "Modeling Concepts",
+            "Assembly Concept",
+            "ZW3D is a powerful and easy-to-use parametric feature-based CAD software that enables users to quickly and intuitively design parts. Wireframe, surface and solid features seamlessly integrate into the part model, providing the best flexibility for design applications.",
+            "When designing a part in ZW3D, there is a natural sequence. This includes using datum planes, sketches, and external references to establish wireframe, surface, and solid features. This section contains a review of the basic part modeling concepts.",
+            "Datum Concept",
+            "Sketch Concept",
+            "External Reference Concept",
+            "Entity Feature Concept",
+            "Surface Feature Concept",
+            "Wireframe Feature Concept",
+            "The user can build an assembly model in the same way either \"from bottom to top\" or \"from top to bottom\". In either case, the assembly is composed of components that are built into the assembly or inserted (referenced) into the assembly.",
+            "When you add components to an assembly, a parent/child relationship is formed. These relationships are displayed in the assembly tree in a diagrammatic way. The assembly has a certain level of correlation in terms of parameters due to alignment constraints. The information about how a component should be placed within the assembly hierarchy and how it should respond if other components are modified is all contained in these constraints.",
+            "This allows users to apply more commands to other components and sub-assembly instances (not active) making it easier to work in an assembly environment. These commands include: Inquire commands, Point commands, Text commands, Datum commands and Pattern component commands. This also enhances the performance of large assemblies by reducing unnecessary redraws and adopting enhanced display management.",
+            "The assembly model contains more information than the assembly components. Using assembly modeling, users can perform interference checks between components and query detailed information about the assembly, such as mass properties. The figure above shows a basic assembly used to illustrate the \"bottom-up\" and \"top-down\" design methods in ZW3D.",
+            "Bottom-up Assembly Design",
+            "Bottom-up Assembly Design"
+        ],
+        "reference": [
+            "ZW3D Concepts",
+            "Modeling Concepts",
+            "Assembly Concepts",
+            "ZW3D is a powerful yet easy to use parametric feature-based CAD program that allows you to design parts quickly and intuitively. Wireframe, surface, and solid features are seamlessly integrated into the part model to provide optimum flexibility in design applications.",
+            "There is a natural sequence in which parts are designed with ZW3D. This includes the use of datum planes, sketches, and external references for creating wireframe, surface, and solid features. This section contains a review of these basic part modeling concepts.",
+            "Datum Concepts",
+            "Sketching Concepts",
+            "External Reference Concepts",
+            "Solid Feature Concepts",
+            "Surface Feature Concepts",
+            "Wireframe Feature Concepts",
+            "You can build assembly models the same way you design them - from the \"bottom up\" or from the \"top down.\" In either case, the assembly is made up of components that are either created or inserted (instanced) into the assembly.",
+            "When components are added to an assembly, parent/child relationships are formed. These relationships are graphically displayed in an assembly tree. Components are parametrically related by alignment constraints. These constraints contain information about how a component should be positioned within the assembly hierarchy and how it should react if other components are modified.",
+            "Working within the context of an assembly is made easier by allowing you to apply more commands to other components and sub-assemblies (that are not active). These include the Inquire, Point, Annotation Text, Datum Plane and Pattern Component commands. Large assembly performance is enhanced by eliminating unnecessary redraws and enhanced display management while zooming.",
+            "Assembly models contain more information than simply the sum of their components. With assembly modeling you can perform interference checks between components and inquire assembly specific information such as mass properties data. The figure below shows a basic assembly and is used to illustrates the \"bottom up\" and \"top down\" design approaches with ZW3D.",
+            "Bottom Up Assembly Design",
+            "Top Down Assembly Design"
+        ],
+        "result": {
+            "bleu": 0.3355259747493315,
+            "precisions": [
+                0.6712328767123288,
+                0.41954022988505746,
+                0.26586102719033233,
+                0.16927899686520376
+            ],
+            "brevity_penalty": 1.0,
+            "length_ratio": 1.0310734463276836,
+            "translation_length": 365,
+            "reference_length": 354
+        }
+    },
+    {
+        "predictions": [
+            "ZW3D Concepts",
+            "View Tools",
+            "Toolbar>Icon (Part/Sketch/Sheet/CAM Level)",
+            "Use this command to return to the previous view in a series of views."
+        ],
+        "reference": [
+            "ZW3D Concepts",
+            "Viewing Tools",
+            "Toolbar > Icon (Part/Sketch/Drawing Sheet/CAM Level)",
+            "Use this command to return to the previous view in a series of views."
+        ],
+        "result": {
+            "bleu": 0.8903702598975581,
+            "precisions": [
+                0.96875,
+                0.9285714285714286,
+                0.9166666666666666,
+                0.8636363636363636
+            ],
+            "brevity_penalty": 0.9692332344763441,
+            "length_ratio": 0.9696969696969697,
+            "translation_length": 32,
+            "reference_length": 33
+        }
+    },
+    {
+        "predictions": [
+            "ZW3D Concepts",
+            "Part Section View",
+            "Section Isolate On/Off",
+            "Required Inputs",
+            "Optional Inputs",
+            "Select Input (Insert View Options)",
+            "Interference Check",
+            "ZW3D supports sectioning. This means you can operate on a part while also activating a previously defined section plane. The part itself will not change. Only the display of the part will be affected. This is very convenient if you need to operate on areas of a part that are not easily visible in or.",
+            "Wireframe display mode",
+            "Hidden Display Mode",
+            "This command controls the section view on/off.",
+            "Select the section type to display",
+            "Display a section through a plane.",
+            "Show a section by two cutting planes.",
+            "Show a section through three planes.",
+            "Display a section through a wireframe plane.",
+            "Show a section through profiles.",
+            "View Name & Insert View Name and save a section view. Now more than one view can be saved to the view manager. The manager allows you to create, delete, activate, redefine, and rename views.",
+            "Align plane Use this option to define the alignment of the section view. By default, the section view is aligned with the default XY plane. You can select any datum plane or plane. The section view will align with the selected plane.",
+            "Align Plane 1/Align Plane 2/Align Plane 3Use this option to define the alignment of the section view (through 3 planes). By default, the section view is aligned with the default XY/XZ/YZ plane. You can select any datum plane or plane. The section view will be aligned with the selected plane. You can uncheck the box to hide the selected section or flip the cutting plane by the button.",
+            "Activate base plane Use this option to toggle the display of each section view. There is always an active section view. You can activate a plane by selecting an icon (i.e., pressing the icon).",
+            "Activate the top datum. Activate the front datum. Activate the right datum. Activate the left datum. Activate the back datum. Activate the bottom datum.",
+            "Offset For plane display section and cut section display section (see Required Inputs above), use this option to offset the section view from the alignment plane.",
+            "Thickness Define the thickness of the cut face\u2019s section.",
+            "Top View, Front View, Right View, Left View, Back View, Bottom View Use these options to locate each plane of the wireframe section.",
+            "Reset Position Reset all planes to their default position.",
+            "Flip direction Use this option to flip the cut plane.",
+            "Profile Specify a closed profile to create a section. You can select a face, wireframe geometry, face boundary or a sketch. Trim intersecting shapes or components by extruding the profile. Similar to the subtract operation in the Extrude command.",
+            "Type Specify the type of stretch.",
+            "Start point, End point Specify the start and end positions of the stretch. You can enter exact values or drag the cursor on the screen to preview in real-time. You can also right-click to display additional input options.",
+            "Cut shape Use this option to determine how the cut portion is displayed. Select from the following options.",
+            "There are no invisible section shapes. Section wireframe shapes.",
+            "Interference refers to the color of the overlap area between the solid and component.",
+            "Fill Color The fill color can be set as the solid color or custom color.",
+            "Fill Style Use this option to define the type of hatch pattern that will be displayed on the section view of the part. Select one of the following options:",
+            "No cover. Fill cover. Hatch cover.",
+            "Spacing If Cover Plate is selected (see above), use this option to define the pattern spacing.",
+            "Opaque Use the cursor to change the opacity of (the section view on the part). The opacity on the left is lower, the opacity on the right is higher. The farthest right will form a solid section view.",
+            "Align Section Use this option to align the view with the selected section.",
+            "Show Interference Check this box to display the regions where solids and components intersect.",
+            "Show Section Check this box to display the section. Otherwise, it will be hidden.",
+            "Show Handle Check this box to display the handle. Otherwise, it will be hidden.",
+            "Non-Closed Shape Display Fill This option is valid for non-closed shapes. Check this box to display non-closed shapes with fill.",
+            "Check this option to adjust the handle position and axis direction.",
+            "Do not check this option to move, copy or rotate an entity by handle.",
+            "Show only section slices Check this box to show only section slices.",
+            "Trim wireframe Check this box to slice the wireframe.",
+            "Show Profile Curve Check this box to display the profile curve.",
+            "Curve Color This is the color of the section curve.",
+            "Wireframe Select the wireframe value of the section curve, including 0.18mm, 0.25mm, 0.35mm, 0.50mm, 0.70mm and 1.00mm.",
+            "Insert Datum Utilize this option to place the datum plane on the active section view and at the center of the section view.",
+            "Insert Curve List Use this option to create section curves and place them on the active section view.",
+            "Exclude/Include Use this option to select components that will not participate in the section or those that will.",
+            "Components Use this option to select components that will not participate/participate in the section.",
+            "Load component assembly.",
+            "Use the Drag Component command to drag the component within the active range to the location where you want to check the intersection point.",
+            "Execute this command and set the point of interference from the Settings of Input Manager.",
+            "Optional Inputs",
+            "Pick one of the displayed section views and drag it through the assembly. If you find an interference between two or more components, the interference will be displayed in the specified interference color. Refer to the example below.",
+            "STEP 1: Load the assembly STEP 2: Drag the component STEP 3: Preview the intersection point",
+            "STEP 1: Load the assembly",
+            "STEP 2: Drag Components",
+            "STEP 3: Preview Intersections"
+        ],
+        "reference": [
+            "ZW3D Concepts",
+            "Part Section Views",
+            "Section On/Off",
+            "Required Inputs",
+            "Optional Inputs",
+            "Optional Inputs (Insert View Option)",
+            "for Interference Checking",
+            "ZW3D supports a Section View. This means that you can work on a part while previously defined cutting planes are active. The part is not physically altered in any way. Only the display of the part is affected. This is very convenient when you need to work on areas of a part that are not readily visible in or.",
+            "Wireframe Display Mode",
+            "Hidden Line Display Mode",
+            "Use this command to control Section On/Off.",
+            "Select the type of section to display.",
+            "Display a section at a single plane.",
+            "Display a slice section at two planes.",
+            "Display a section with three planes.",
+            "Display a section with an envelope encompassing 6 individual section planes.",
+            "Display a section with a profile.",
+            "View name & Insert View Name and save section view. Now more than one section view can be saved into view manager. Through the manager, some operations, such as create/delete/activate/redefine/rename.This is the same as selecting the New option from the View Manager. can be apply to the view.You can store the current layer visibility and current section plane along with the saved view. All parameters of this command are stored with the view. If you save multiple section views, they can all have different slices, offsets, inference colors, cross hatching, hatch spacing, etc.",
+            "Align plane Use this option to define the alignment of the section planes. By default, the section planes are aligned with the default XY plane. You can select any datum plane or planar face. The section planes will align with the selected plane.",
+            "Align plane1/Align plane2/Align plane3 Use this option to define the alignment of the section planes (for Section with 3 plans). By default, the section planes are aligned with the default XY/XZ/YZ plane. You can select any datum plane or planar face. The section planes will align with the selected plane. You can also remove the check disable the selected section plane. Click the icon to reverse the clip plane.",
+            "Plane activation Use this option to toggle the display of each section plane. There is always an active section plane. By selecting an icon (i.e., it is depressed), that plane is activated.",
+            "Activate top plane. Activate front plane. Activate right plane. Activate left plane. Activate back plane. Activate bottom plane.",
+            "Offset For Section at plane and Section with slice (see Required Inputs above), use this option to offset the section plane relative to the alignment plane.",
+            "Thickness For Section with slice use this option to define the slice thickness.",
+            "Top, Front, Right, Left, Back, Bottom For Section with envelope, use these options to locate each plane of the envelope.",
+            "Reset position Use this option to reset all planes to their default locations.",
+            "Reverse direction Use this option to reverse the clip plane.",
+            "Profile Select a closed profile to create a section. You can select face, wireframe geometry, face edges or a sketch. Extrude the selected profile to cut the overlapped portion of the base part or assembly. This section mode is similar to the Extrude command with the remove boolean operation.",
+            "Type Specify the extrude type from the following. 1 side The start position is decided by the selected Profile, and to specify the End position to determine the extrude length. 2 sides Specify the Start and End positions to determine the extrude length. Symmetrical This type is similar to the \"1 Side\", but it will extrude the same length along the opposite direction decided by the End position.",
+            "Start, End Specify the start and end of the extruded profile. You can enter the exact values, drag the preview echo on the screen or right-click for additional input options.",
+            "Sectioned shape Use this option to decide how to display the portion of the part that is sectioned away. Select from the following.",
+            "Make the sectioned shape invisible. Display the sectioned shape as Wireframe geometry.",
+            "Interference This is the color of the area of intersecting between shape/components.",
+            "Hatch color Show section color with Body color or Specify color.",
+            "Hatch style Use this option to define the type of cap overlay to display on the part section plane. Select one of the following.",
+            "Do not display a cap overlay. Display a hatch pattern for the cap overlay. Display a grid pattern for the cap overlay.",
+            "Spacing If a Cap overlay is selected (see above), use this option to define the pattern spacing.",
+            "Opaque Use the slider to change the transparency of the section plane (on the part). Left is less transparent and right is more. Al the way to the right will result in a solid section plane.",
+            "Align with section plane Use this option to align view with selected section plane.",
+            "Display interference Place a check in this box if you want the area of intersecting between shape/components displayed.",
+            "Display section planes Place a check in this box if you want the section planes displayed. Remove the check to hide them.",
+            "Display handle Place a check in this box if you want the handle displayed. Remove the check to hide it.",
+            "Display hatch for non-closed shapes This option is only valid for non-closed shapes. Check this box to display hatch for non-closed shapes.",
+            "When this box is checked, you can adjust the handle position and direction.",
+            "When this box is unchecked, you can move, copy or rotate entities by using handle.",
+            "Display section slice only Check this box if you want only the section slice displayed.",
+            "Clip wireframe Check this box if you want to section the wireframe.",
+            "Display section curves Check in this box if you want the section curves displayed.",
+            "Curve color This is the color of the section curves.",
+            "Line width Select a value as the line width of the section curves including 0.18mm, 0.25mm, 0.35mm, 0.50mm, 0.70mm and 1.00mm.",
+            "Insert datum Use this option to place a datum plane on and at the center of the active section plane.",
+            "Insert curves Use this option to create section curves and place them on the active section plane.",
+            "Exclude/Include Use this option to allow users to specify which components are sectioned.",
+            "Component Use this option to select the components you want to exclude/include the section.",
+            "Load a component assembly.",
+            "Use the Drag Component command to drag a component through its range of motion to a location where you want to check for an intersection.",
+            "Execute this command and set the of intersection from the section of the Input Manager.",
+            "Optional Input",
+            "Click on one of the displayed section planes and drag it through the assembly. If an intersection among two or more components is found, it will be displayed in the intersection color you specified. Refer to the example shown below.",
+            "Step 1: Load Assembly Step 2: Drag Component Step 3: Preview Intersection",
+            "Step 1: Load Assembly",
+            "Step 2: Drag Component",
+            "Step 3: Preview Intersection"
+        ],
+        "result": {
+            "bleu": 0.32819699919847334,
+            "precisions": [
+                0.6841637010676157,
+                0.4420358152686145,
+                0.3226452905811623,
+                0.24574468085106382
+            ],
+            "brevity_penalty": 0.8340226973700526,
+            "length_ratio": 0.8463855421686747,
+            "translation_length": 1124,
+            "reference_length": 1328
+        }
+    },
+    {
+        "predictions": [
+            "ZW3D File Level",
+            "File Menu",
+            "Up to 10 files can be listed at the bottom of the File menu. The 11th file will be placed in the position of the first file in the list, and so on. You can select a file from the list to display it.",
+            "If the user forgets that a file is already open and uses the Open File button to open the file again, ZW3D will prompt the user that the file is already open and ask if they want to reload the original file. Typically, select No, and ZW3D will reopen the already active file.",
+            "File name Select the file name to open/import.",
+            "File type Specify the file type of the input file.",
+            "File Description Displays the description of the file. The description can be defined in the File Description field of the Part Attributes during the creation of the file.",
+            "Copy to local Check this box to copy the file to the local.",
+            "Load Options Users can load the assembly file in the form of loading the last saved, full load and partial load.",
+            "Root Object Input the root object to search.",
+            "Open/Read Only Open the file. If you select the Read Only mode, you can prevent accidental operations on the existing model. After opening the file in Read Only mode, you can edit the assembly, but you cannot save it. Its sub-assembly can be edited and saved.",
+            "Update View Used to set the display method of the file, including detailed information, list and thumbnail.",
+            "Display Preview Tab This tab is used to preview the selected ZW3D file.",
+            "Quick Filter Used to quickly filter specific types of files in ZW3D, including part, assembly, drawing sheet, CAM plan and Z3.",
+            "Active Folder The current active path. The right-click menu supports Open, Open Source Folder, Cut, Copy, Delete, Rename, Set Quick Access Folder and Set Work Folder. Among them, after selecting Set Quick Access Folder, this folder will be listed in the left menu; if the folder is set as the work folder, opening the work folder can directly enter this folder.",
+            "Save folder The file path where the file is saved in the file.",
+            "Search Folder The paths listed in the search path panel of ZW3D.",
+            "Active Path and Subfolders The current active path and its subfolders.",
+            "My Files/Work Directory/Desktop/My Computer Open the File Manager window and click on the left menu to access the My Files/Work Directory/Desktop/My Computer shortcuts."
+        ],
+        "reference": [
+            "ZW3D File Level",
+            "File",
+            "Up to ten currently opened files are listed at the bottom of the File Menu for easy access. The eleventh file opened will replace the first file on the list and so on. Select a file from the list to display it.",
+            "If you forget that a file is already opened and you try to Open the file again, you will be reminded that the file is already opened and asked if you want to reload the original. The usual response should be No and ZW3D will reopen the active one.",
+            "File Name Select the file name to open or input.",
+            "File Type Specify the type of file.",
+            "File description Display the file description which can be defined in \"File description\" of part properties while creating the file.",
+            "Local copy Check this option to copy the file in the local.",
+            "Loading options Support last saved loading, full loading and partially loading.",
+            "Open/Open read-only Open the file. If you select Open read-only mode, you can prevent misoperations on existing models. After the file is opened in read-only mode, the assembly can be edited but cannot be saved. Sub-assemblies (or components) can be edited and saved.",
+            "Root object Input the root object to search files.",
+            "Change your view Select the display way of directories including Detaisl, List and Thumbnail.",
+            "Show the preview pane Use this icon to preview the selected ZW3D files.",
+            "Quick filter Filter the specific ZW3D files including part, assembly, drawing, CAM and Z3.",
+            "From active folder Check this option to activate current path. The context menu supports to Open, Cut, Copy, Delete, Rename, Set quick directory and Set working directory. If Set quick directory, the directory will be listed on the left bar; if Set working directory, the directory cann be opened in Working Folder.",
+            "From saved folder Select a file path saved in a file.",
+            "From search folders Select the paths that listed in the search path panel. If check this option, Auto Search in ZW3D Search Paths will be enabled at the same time.",
+            "From active & its sub-folders Select the current activated path and its sub-folders.",
+            "My Files/Working Folder/Desk/My Computer Open file UI supports the shortcut folders of My Files, Working Folder, Desk and My Computer."
+        ],
+        "result": {
+            "bleu": 0.20568361388461254,
+            "precisions": [
+                0.47780126849894294,
+                0.2511013215859031,
+                0.15172413793103448,
+                0.09832134292565947
+            ],
+            "brevity_penalty": 1.0,
+            "length_ratio": 1.097447795823666,
+            "translation_length": 473,
+            "reference_length": 431
+        }
+    },
+    {
+        "predictions": [
+            "ZW3D Basics",
+            "Quick Customization",
+            "Ribbon Bar Display and Hide",
+            "Ribbon Tab Show and Hide",
+            "Ribbon Tab Display & Hide",
+            "Ribbon Button Display and Hide",
+            "Ribbon Button Size and Tips",
+            "Customize Ribbon Bar",
+            "The default display location of the Ribbon is at the top of the main window. It has 5 levels from top to bottom, which are Ribbon, Ribbon Tab, Ribbon Panel, Ribbon Button, and Ribbon Drop-down Menu. The active Ribbon will change with the current active ZW3D level. Using the Ribbon can group the toolbar buttons together, thus saving the space of the graphic area.",
+            "The ribbon is displayed by default.",
+            "Right-click on the blank area of the Ribbon tab, and check or uncheck Show Ribbon Bar in the Ribbon appearance menu.",
+            "Click the Minimize Ribbon button at the top right corner of the Ribbon tab to switch the display status of the Ribbon tab.",
+            "Right-click on the blank area of the Ribbon tab, select Ribbon tab, check or uncheck the box to show or hide the Ribbon tab.",
+            "Right-click on the blank area of the Ribbon tab, select Ribbon panel, and check or uncheck the box to show or hide the Ribbon panel bar.",
+            "Right-click on the button to hide and select Hide.",
+            "Right-click on the panel and select the option, check or uncheck the box to show or hide multiple buttons on the panel.",
+            "The command buttons in the ribbon support mixed large and small icons. Right-click on the button you want to modify and select Large Icon or Small Icon to change the button size.",
+            "Right-click on the Ribbon tab, set all the buttons in the tab to large icons or small icons, or select to let the system automatically adjust the icon size.",
+            "Right-click on the blank area of the Ribbon tab, and check or uncheck the Text on Ribbon in the Ribbon appearance menu to show or hide the button\u2019s annotation text. The default is to show the annotation text.",
+            "Right-click on the blank area of the Ribbon tab, select, open it, you can customize the Ribbon bar and its various elements, including adding, deleting, editing, showing and hiding, as well as adjusting the order, etc.",
+            "Customize Manager"
+        ],
+        "reference": [
+            "ZW3D Basics",
+            "Rapid Customization",
+            "Ribbon",
+            "Ribbon Tab",
+            "Ribbon Panel",
+            "Ribbon Button",
+            "Ribbon Button size and hints",
+            "Customize",
+            "The Ribbon located at the top of the Graphics Window. There are five levels of the Ribbon, which from top to bottom are Ribbon, Ribbon Tab, Ribbon Panel, Ribbon Button and pull-down menu of Ribbon button. The Ribbons vary according to the ZW3D level which is activated.",
+            "The Ribbon are visible by default.",
+            "Right-click the blank of ribbon tab and check or uncheck the Show Ribbon from the Ribbon Appearance menu.",
+            "Click the button to minimize the ribbon on the top-right of ribbon.",
+            "Right-click on the blank of ribbon tab and select Ribbon Tab. Then check or uncheck the tab you want to show or hide.",
+            "Right-click on the blank of ribbon tab and select Ribbon Panel. Then check or uncheck the panel you want to show or hide.",
+            "Right-click on a button and select Hide to hide it.",
+            "Right-click the blank of ribbon panel and select Items, you can hide/show multiple commands at the same time.",
+            "The Ribbon support large ICONS and small ICONS mixed arrangement. Right-click on a ribbon button and select Large Icon or Small Icon to change the button size.",
+            "Right-click the ribbon panel to set all the button within this panel to large icon or small icon. Or Auto Adjust icon by ZW3D.",
+            "Right-click the blank of ribbon tab and check/uncheck the Text on to display/hidden ribbon button hints from the Ribbon Appearance.",
+            "Right-click the blank of ribbon tab, and choose Customize to open the . You can add, delete, modify Ribbon Tab and Button, or adjust the order, etc.",
+            "Customize Settings Form"
+        ],
+        "result": {
+            "bleu": 0.19831804899007544,
+            "precisions": [
+                0.5160493827160494,
+                0.2421875,
+                0.13774104683195593,
+                0.08985507246376812
+            ],
+            "brevity_penalty": 1.0,
+            "length_ratio": 1.3106796116504855,
+            "translation_length": 405,
+            "reference_length": 309
+        }
+    },
+    {
+        "predictions": [
+            "ZW3D Modeling",
+            "Assembly Design",
+            "Tools",
+            "Like the Cut Assembly command, the Chamfer/ Fillet Assembly command is another command to modify the shape of components in an assembly. It keeps most of the chamfer/fillet types of the part chamfer/fillet feature, but some advanced features are not included, such as variable radius chamfer, elliptical chamfer, and asymmetric fillet. The modification only exists in the current assembly and will not affect the original shape of the component. Refer to or for parameter settings.",
+            "Round Feature",
+            "Fillet Feature",
+            "Inherit the feature by component Check this option, the feature will be inherited by the component. The assembly feature will be passed to the component, and the corresponding history feature will be created in the component. The local feature generated in the component is inherited, which means it cannot be edited or deleted. You can choose to keep the association or disassociate it."
+        ],
+        "reference": [
+            "ZW3D Modeling",
+            "Assembly Design",
+            "Tools",
+            "Just like the \u201cAssembly Cut\", this command is another tool to remove material from picked components. keep most fillet/chamfer types that same as the\"fillet/chamfer Feature\" in part, But some advanced feature in the Part mode is not fulfilled. For example, the variable radius Fillet, the ellipse Fillet,Asymmetric Chamfer. and it can only exists within the assembly, which will not affect any original modeling course of the picked components.See or for options in this command.",
+            "Fillet Feature",
+            "Chamfer Feature",
+            "Propagate feature to components Check this option and the feature will be inherited by the component. Assembly features are passed to the component, where the corresponding history features are created. Local features generated in components are inherited, that is, cannot be edited, deleted, and can be kept or disassociated."
+        ],
+        "result": {
+            "bleu": 0.15996418251177288,
+            "precisions": [
+                0.5952380952380952,
+                0.21739130434782608,
+                0.0967741935483871,
+                0.05228758169934641
+            ],
+            "brevity_penalty": 1.0,
+            "length_ratio": 1.0434782608695652,
+            "translation_length": 168,
+            "reference_length": 161
+        }
+    },
+    {
+        "predictions": [
+            "> > > > Pick Edge",
+            "ZW3D Basics",
+            "Pick & Pick Filter",
+            "Select",
+            "Select Edge",
+            "Select edges command Select the connected edges. This command provides various methods to select a specific feature composed of edges, such as tangent, connected, etc.",
+            "Single Find a single edge.",
+            "Tangent edge Find the adjacent edge that is tangent to the seed edge.",
+            "Connect Edges Find edges connected to seed edges.",
+            "Feature Edge Find edges automatically based on features.",
+            "Vertex Edge Find edges that share a common vertex. For example, when picking the center vertex of a star, all edges on the vertex will be automatically selected.",
+            "Face Edges Select edges on a face by picking the face. The system will automatically select the edges on the face based on the rule. Click Rule Pick Setting to pop up the Face Edges Setting panel, which provides three options: All, Inner Loop, Outer Loop. As shown in the figure below, the selected part is highlighted.",
+            "All Inner Outer",
+            "All",
+            "Inner ring",
+            "Outer ring",
+            "Shape Edges Select a shape edge, all edges on the shape will be selected automatically.",
+            "Pick Set Pick Set is displayed in the manager after it is created, and you can select an existing pick set."
+        ],
+        "reference": [
+            "> > > > Pick Edges",
+            "ZW3D Basics",
+            "Picking & Pick Filters",
+            "Picking",
+            "Pick Edges",
+            "Use Pick Edges to select connected groups of edges. In ZW3D, it provides several methods for selecting edge regions that form certain kinds of features, such as tangent, connect, feature edges.",
+            "Single Edge Find the a single edge.",
+            "Tangent Edges Find the adjacent edges which are tangent to the seed.",
+            "Connect Edges Find the edges which are connected with the seed.",
+            "Feature Edges Find the edges that share the same feature with the seed.",
+            "Vertex Edges Find the surfaces whose radius is equal to the seed\u2019s radius. The cylindrical surface and the sphere can be used as a seed.",
+            "Face Edges Find the edges that are on the selected face. Select a face first and the system will automatically select the edges according to the rule setting. Click \"Rule Pick Setting\" and select \"All\", \"Inner\", or \"Outer\" option in Face Edges Settings. The picked edges are highlight as the following figures:",
+            "All Inner Outer",
+            "All",
+            "Inner",
+            "Outer",
+            "Shape Edges Select an edge and the system will automatically select all edges that are on the same shape.",
+            "Pick Set After creating Pick Set, display in the manager. User can select the existing pick set."
+        ],
+        "result": {
+            "bleu": 0.16587204910230802,
+            "precisions": [
+                0.5720524017467249,
+                0.25118483412322273,
+                0.11282051282051282,
+                0.0546448087431694
+            ],
+            "brevity_penalty": 0.9614609676513993,
+            "length_ratio": 0.9621848739495799,
+            "translation_length": 229,
+            "reference_length": 238
+        }
+    },
+    {
+        "predictions": [
+            "ZW3D Modeling",
+            "Pipe Design",
+            "Modify",
+            "Use this command to quickly create a route with the same direction.",
+            "Required Inputs",
+            "Align the copied route Select the route to copy and drag it to the corresponding location by moving the handle of the drawing area. Note: When using \"Move handle only\", you need to move it once more after canceling \"Move handle only\", otherwise the copied model will remain at the position of the moving handle.",
+            "Point to point copy Select the pipe to copy, place the copied pipe at the target point with the start point as the datum point.",
+            "Component selection Select the piping component to copy.",
+            "Check the middle option in Auto Pick can help to pick the target component faster, by picking the head and tail of the pipe, the middle part can be automatically picked.",
+            "Move only the handle Check this box to control the handle movement.",
+            "Check this option to adjust the handle position and axis direction.",
+            "Do not check this option to move, copy or rotate entities by handle.",
+            "Origin It refers to the origin of the handle. Click the left mouse button to highlight the origin of the handle, then click on the target location of the solid to adjust the handle position or move, copy the solid.",
+            "X, Y, Z axis refers to the handle direction, which defaults to the coordinate axis direction of the selected entity. Select the handle coordinate axis to be adjusted, and the selected coordinate axis is highlighted. Drag the coordinate axis to the desired direction.",
+            "Start point Select the start point location of the copy.",
+            "Target point Select the location to place the start point of the copied piping."
+        ],
+        "reference": [
+            "ZW3D Modeling",
+            "Piping Design",
+            "Modify",
+            "Use this command to fast create pipes with the same flow direction.",
+            "Required Inputs",
+            "Copy pipes by aligning framesSelect pipes to copy. You can align the pipes to specified position through dragging the handle in the drawing area. Note: when \"Move handle only\" is checked, you need to cancel \"Move handle only\" and move again; Otherwise, the replicated model remains in the position before moving the handle.",
+            "Copy pipes from point to pointSelect pipes to copy. You can place the copied pipes at the target point through taking the starting point as the datum point.",
+            "ComponentSelect pipe component to copy.",
+            "Select intermediate automaticallyCheck this box to quickly select target component. It can automatically select the intermediate segement through selecting the start and end of pipes.",
+            "Move handle onlySelect pipe component to copy.",
+            "When this box is checked, you can adjust the handle position and direction.",
+            "When this box is unchecked, you can move, copy or rotate entities by using handle.",
+            "Position It refers to the handle origin. Click the handle origin, it will be highlight, then click the target position\uff0cYou can adjust the handle position or move, copy, rotate entities.",
+            "X, Y, Z Axis It refers to the handle direction. Select the axis to adjust, and the selected axis will be highlight, then drag the axis to destination.",
+            "From pointSelect the position of starting point to copy.",
+            "To point(s)Select the position to place the starting point of pipes."
+        ],
+        "result": {
+            "bleu": 0.24737354722177804,
+            "precisions": [
+                0.554140127388535,
+                0.31543624161073824,
+                0.1872791519434629,
+                0.11439114391143912
+            ],
+            "brevity_penalty": 1.0,
+            "length_ratio": 1.1056338028169015,
+            "translation_length": 314,
+            "reference_length": 284
+        }
+    },
+    {
+        "predictions": [
+            "ZW3D Modeling",
+            "Part Design",
+            "Feature",
+            "Use this command to create a lip feature based on two offset distances along the selected edges. The required inputs include the face edges to create the feature and the offset 1, 2. You can continue to select edges and input the offset distances until the desired lip feature is created.",
+            "Edge E Select the edges to apply the lip feature to.",
+            "Offset1 D1 Specify the first offset distance. The sign (+/-) of the lip offset value is defined relative to the normal of the face. Only -/- offset values are supported on convex edges, and only +/- offset values are supported on concave edges.",
+            "Offset 2D2 Specify the second offset distance."
+        ],
+        "reference": [
+            "ZW3D Modeling",
+            "Part Design",
+            "Features",
+            "Use this command to create a constant lip feature along selected edges based on two offset distances. The required inputs include the face edges to feature and the 1st and 2nd offsets. You can continue to select edges and enter offsets until you complete the desired lip feature.",
+            "Edges Select the edge to apply the lip feature to.",
+            "1st offset Specify the first offset distance. Lip setback distances are +/- relative to the face normal. Only -/- setback lips on convex edges and +/+ offset lips on concave edges are supported at this time.",
+            "2nd offset Specify the second offset distance."
+        ],
+        "result": {
+            "bleu": 0.419449286346131,
+            "precisions": [
+                0.7037037037037037,
+                0.5078125,
+                0.3524590163934426,
+                0.2457627118644068
+            ],
+            "brevity_penalty": 1.0,
+            "length_ratio": 1.125,
+            "translation_length": 135,
+            "reference_length": 120
+        }
+    },
+    {
+        "predictions": [
+            "ZW3D Modeling",
+            "Part Rendering",
+            "Use this command to create a rendered image of the graphics window and display it in the render window. ZW3D supports a wide range of rendering options to create realistic render scenes. Use the options to set the size and other attributes of the rendered image. Apply texture mapping if desired before rendering.",
+            "POV-Ray Free Software Advanced Rendering Engine",
+            "Rendering Attributes Form",
+            "Texture Attributes Form",
+            "Industrial Buckets Designed and Manufactured with ZW3D CAD/CAM by Johnstone Safety Products"
+        ],
+        "reference": [
+            "ZW3D Modeling",
+            "Part Rendering",
+            "Use this command to create a rendered image of the graphics window and displays it in the rendering window, to a file, or both. ZW3D supports the to create realistic rendered scenes. Use the to set the size and other attributes of the rendered image. Use the to apply texture maps to faces before rendering if desired.",
+            "Pov-Ray freeware advanced rendering engine",
+            "Rendering Attributes Form",
+            "Texture Attributes Form",
+            "Industrial bucket designed and manufactured by Johnstone Safety Products using ZW3D CAD/CAM"
+        ],
+        "result": {
+            "bleu": 0.472641244636497,
+            "precisions": [
+                0.7701149425287356,
+                0.575,
+                0.4383561643835616,
+                0.3235294117647059
+            ],
+            "brevity_penalty": 0.9441490207156028,
+            "length_ratio": 0.9456521739130435,
+            "translation_length": 87,
+            "reference_length": 92
+        }
+    },
+    {
+        "predictions": [
+            "ZW3D Drafting Sheet",
+            "Editing Dimensions",
+            "Use this command at the drawing sheet level to modify the text of a dimension. This command allows you to replace the dimension value with user text. See Using Embedded Text Variables for how to embed part attribute data and other variable text.",
+            "Solid Select the dimension to modify.",
+            "Texts should be used with the options given below. Enter new dimension text.",
+            "Pick user text Pick user text, enter the new text into the text field above, or right-click to open the input options menu and select Editor. If the dimension is of the user text type, the text will be displayed in the text field (or the Text and Dimension Editor) for modification."
+        ],
+        "reference": [
+            "ZW3D Drafting",
+            "Editing Dimensions",
+            "Use this command at the Drawing Sheet Level to modify a dimension's text string. This command replaces the dimension value with user text. See Using Embedded Text Variables to learn how you can embed part attribute data and other variables text strings.",
+            "Entity Select the dimension to modify.",
+            "Text Used with the User Text option below. Enter the new dimension text.",
+            "User Text If this is, enter the new dimension text in the Text field above or right-click and select Editor from the Input Options Menu. If the dimension is currently user text, the text string will be displayed in the Text field (or the Text and Dimension Editor) for modification."
+        ],
+        "result": {
+            "bleu": 0.44780397776938013,
+            "precisions": [
+                0.7196969696969697,
+                0.5238095238095238,
+                0.38333333333333336,
+                0.2782608695652174
+            ],
+            "brevity_penalty": 1.0,
+            "length_ratio": 1.0393700787401574,
+            "translation_length": 132,
+            "reference_length": 127
+        }
+    },
+    {
+        "predictions": [
+            "ZW3D Manufacturing (CAM)",
+            "Generate Toolpaths",
+            "CAM Tactics",
+            "2X Intelligent Hole Making",
+            "This form is used to define several tactics for the smart hole operation. Tactics refer to the allowed tolerancing.",
+            "The allowed positive tolerance of the size measurement (such as diameter, depth, etc.) of the upper clearance hole.",
+            "Under Tolerance Hole size measurement tolerance.",
+            "Surface Finish Allowable hole surface finish tolerance.",
+            "Circularity tolerance allowed hole circularity tolerance.",
+            "Cylindrical tolerance allowed hole cylindrical tolerance."
+        ],
+        "reference": [
+            "ZW3D Manufacturing (CAM)",
+            "Generating Toolpaths",
+            "CAM Tactics",
+            "Mill2 Hole Tactic",
+            "Use this form to define the rules for intelligent reaming operations. These refer to the allowable machining tolerances.",
+            "Tol + Possible The allowable positive tolerance for hole size dimensions, like diameters, depth.",
+            "Tol - Possible The allowable negative tolerance for hole size dimensions.",
+            "Finish Possible The allowable hole surface finish tolerance.",
+            "Circularity Possible The allowable hole circularity tolerance.",
+            "Cylindricity Possible The allowable hole cylindricity tolerance."
+        ],
+        "result": {
+            "bleu": 0.19261503552567366,
+            "precisions": [
+                0.5172413793103449,
+                0.23376623376623376,
+                0.13432835820895522,
+                0.0847457627118644
+            ],
+            "brevity_penalty": 1.0,
+            "length_ratio": 1.0116279069767442,
+            "translation_length": 87,
+            "reference_length": 86
+        }
+    },
+    {
+        "predictions": [
+            "ZW3D Applications",
+            "ZW3D PDM",
+            "During the entire lifecycle of the design, ZW3D PDM Manager can search and manage ZW3D object files as well as other non-ZW3D files such as word processing, databases and spreadsheets associated with the design project. It can also be used to manage the product lifecycle functions (such as check-in, check-out, release, etc.) and set user and group permissions.",
+            "Current Directory Use the dropdown list to switch between the Data Database Directory and User Directory. Perform a file search on the current directory.",
+            "File Filter Filter the current database folder (or user folder); enter the filter condition in the File Filter dialog box (see below). ZW3D PDM Manager will locate and list the files that match all the fields.",
+            "File list This lists the results of the file search. If no search condition is entered, all files will be listed.",
+            "Revision List This lists the revision history of the selected file. Each revision represents a file listed in the File List. You can select a file in the File List by selecting a revision level from the Revision List. You can also use this list to view the revision history of a file. Object editing can be performed on the selected file. See Mouse Button Functions for more information.",
+            "Status List The status list shows the current status of the selected file (e.g., new, checked in, checked out, published or deprecated). It also lists the user and group names and their access permissions to the file. More information, see Change the Publish Status of a File and Change ZW3D User and Group Permissions.",
+            "Preview This shows a preview of the file. It is automatically created when you use the Save file, Save as, Save all and Save/Close file commands.",
+            "File List Right-click on a file to display the Object Editing functions listed below. Some functions are disabled depending on the current state of the file.",
+            "Check-in Check-out Publish New Publish Abandon View File Copy File Delete File",
+            "State List Right-click on an item and select Modify State to display the Modify File State Form. Modify the state of the file or the permissions of the user and group. More information, see Modify File Publish State and Modify ZW3D User and Group Permissions.",
+            "Use this form to filter the list of files (see above). If you are viewing a file and know its name, you can just enter the name in the File Name field. If you know the version or the user who created the file, you can enter the corresponding fields. If you are unsure, leave these fields blank. Otherwise, you may not find the file.",
+            "Check the box in front of the field you want to use for the search. This changes the search results by enabling or disabling the field. If you don't enter any search criteria, it will list all files in the current directory.",
+            "The file filter is only available if the corresponding menu is available. If the user closes the file filter menu, these values are reset to the default values (= show all).",
+            "Keyword Search Find all files that contain the specified pattern (keyword).",
+            "Hide inaccessible files Check this box to hide all files that the current user cannot access due to permissions settings."
+        ],
+        "reference": [
+            "ZW3D Applications",
+            "ZW3D PDM",
+            "With the ZW3D PDM Manager you can search for and manage ZW3D object files and other non-ZW3D files such as word processor, database and spreadsheet tables associated with your design projects throughout their life cycle. You can also perform product life cycle functions (e.g., Check In, Check Out, Release, etc.) and set user and group permissions using the ZW3D PDM Manager.",
+            "Current Directory Use the drop-down list to switch between the vault directory and your user directory. File searches will be performed on the current directory.",
+            "File Filter To filter the current vault directory (or your user directory); enter the filter criteria in the File Filter Form (see below). The ZW3D PDM Manager will locate and list those files that match all of the fields provided.",
+            "File List The results of a file search are listed here. All files are listed if no search criteria are entered.",
+            "Revision List The revision history of the selected file is listed here. Each revision represents a file that is listed in the File List. You can select a file from the File List by selecting its revision level from the Revision List. You can also review a files revision history using this list. You can perform Object Editing on selected files. See Mouse Button Functionality for more information.",
+            "State List This list shows the current state of the selected file (e.g., New, Checked In, Checked Out, Released or Obsolete). The user and group name and their access level to the file are also listed. See also Changing a File's Release State and Changing ZW3D User and Group Permissions for more information.",
+            "Preview The preview of the file is shown here. A preview is automatically created when the Save File, Save File As, Save All Files and Save and Close File commands are used.",
+            "File List Right-click on a file to display the following Object Edit functions. Some functions may be disabled depending on the current state of the file.",
+            "Check In Check Out Release New Release Obsolete View File Copy File Delete File",
+            "State List Right-click on an item and select \"Change State\" to display the Change File State Form. You can change the state of the file or the user and group permission for the file. See also Changing a File's Release State and Changing ZW3D User and Group Permissions for more information.",
+            "Use this form to filter the Files List (see above). If you are just looking a file and you know the file name, complete only the File Name field. If you know the revision level or the user name, complete those fields as well to limit the filtered list. If you're not sure, leave the fields blank. Otherwise, the file may not be located.",
+            "When you are done entering the search criteria, put a check in the box next to the fields that you want to search by. You can enable or disable fields to modify the search results. If no search criteria are entered, all files in the current directory are listed.",
+            "The File Filter is only active as long as the menu is visible. If the user closes the File Filter menu then the values reset to defaults (= show everything).",
+            "Keyword Finds all files that contain the specified pattern (keyword)",
+            "Hide inaccessible files Check this box to hide all files which are inaccessible to the current user because of their permission settings."
+        ],
+        "result": {
+            "bleu": 0.36800331935996317,
+            "precisions": [
+                0.6956521739130435,
+                0.445364238410596,
+                0.3083475298126065,
+                0.22552447552447552
+            ],
+            "brevity_penalty": 0.9605419246462789,
+            "length_ratio": 0.9613003095975232,
+            "translation_length": 621,
+            "reference_length": 646
+        }
+    },
+    {
+        "predictions": [
+            "For some complex cases, the toolpath calculation will be a time-consuming process and users need to wait for the calculation to complete. However, with the background calculation method, users can continue to use ZW3D during the toolpath calculation and only need to click the Background Calculation Input to import the toolpath into the corresponding operation after completion, which will greatly improve the work efficiency.",
+            "Hint: Background calculation is only valid in 3-axis milling operations.",
+            "Task: Calculate the tool path using the Quick Milling background calculation.",
+            "STEP 01 Open Batch calculation.Z3 file and enter CAM space.",
+            "STEP 02 Create a 2D offset roughing operation and specify the tool and feature.",
+            "Create 2D Offset Roughing Operation",
+            "STEP 03 Right-click on the operation, and then click the Background Calculation (Limited to Quick Milling) button in the right-click menu, it will automatically pop up the Qm Tracker dialog box, showing the calculation progress.",
+            "Background Calculation",
+            "STEP 04 After the calculation is complete, click the Background Calculation Input button on the toolbar to import the tool path into the operation.",
+            "Import Toolpaths"
+        ],
+        "reference": [
+            "For some complicated cases, toolpaths calculation will be a time-consuming process and users need to wait until the calculation is completed. But with batch calculation method, users can continue to work with ZW3D during the toolpaths calculation and just need to import to the corresponding operation when it is done, which will significantly improve the work efficiency.",
+            "Tips: The batch calculation is only valid in QuickMill operations.",
+            "Task: Calculate toolpaths with Quick Mill Batch calculation",
+            "STEP 01 Open Batch calculation.Z3 file and go to CAM space.",
+            "STEP 02 Create an Offset 2D roughing operation, then specify the tool and features.",
+            "Create offset 2D operation",
+            "STEP 03 Right-click the operation then click Bath Calculate in the context menu, it will automatically pop up the Qm Tracker dialog box to show the calculation progress.",
+            "Batch Calculate",
+            "STEP 04 When the calculation is completed, import the toolpaths into operation.",
+            "Import toolpaths"
+        ],
+        "result": {
+            "bleu": 0.3374315678100061,
+            "precisions": [
+                0.6069651741293532,
+                0.41361256544502617,
+                0.27071823204419887,
+                0.1907514450867052
+            ],
+            "brevity_penalty": 1.0,
+            "length_ratio": 1.2181818181818183,
+            "translation_length": 201,
+            "reference_length": 165
+        }
+    },
+    {
+        "predictions": [
+            "There are two types of 3D geometry, one is solid type and the other is surface type, and they are distinguished by whether the shape is closed in ZW3D. ZW3D provides a unique mixed modeling method that allows users to freely switch between solid and surface, as shown below, when a face of a solid is deleted, it will automatically become a surface type.",
+            "Entity & Surface Type"
+        ],
+        "reference": [
+            "There are two types of shapes: solids and surfaces. In ZW3D, a closed geometry is considered a solid, otherwise, it is a surface, as shown in Figure 91. The unique modeling method of ZW3D, hybrid modeling, allows you to switch between solids and surfaces freely. It means that if a shape is geometrically closed, it will be automatically filled and regarded a solid. ",
+            "Solid Shape and Surface Shape"
+        ],
+        "result": {
+            "bleu": 0.13561219438285524,
+            "precisions": [
+                0.6266666666666667,
+                0.1917808219178082,
+                0.08450704225352113,
+                0.043478260869565216
+            ],
+            "brevity_penalty": 0.9355069850316178,
+            "length_ratio": 0.9375,
+            "translation_length": 75,
+            "reference_length": 80
+        }
+    },
+    {
+        "predictions": [
+            "Direct Edit Tab -> Modify -> DE Face Offset",
+            "Use this command to offset one or more faces. During the offset operation, the faces are extended or trimmed to close gaps or resolve intersecting faces.",
+            "DE Face Offset",
+            "Side: If \"Do not create\" is selected, the edges will be exploded, the faces will be offset, and the result will be a non-contiguous face or shape. If \"Create\" is selected, all boundary edges will be recalculated and side faces will be created as needed.",
+            "Intersect: Designers use this command to remove self-intersecting faces.",
+            "DE Face Offset"
+        ],
+        "reference": [
+            "Direct Edit Ribbon Tab -> Modify ->DE Face Offset ",
+            "This command is used for offsetting one or more faces. It will extend or trim faces as needed during the offset operation to close gaps and resolve intersections.",
+            "DE Face Offset",
+            "Side faces: If Do not create is checked, the edges will be exploded and the face will offset and the result will be a disconnected face or shape. If Create is checked, then all bounding edges will be recomputed and the side faces will be created where required.",
+            "Intersections: Designers can use this option to remove the self-intersecting faces.",
+            "DE Face Offset"
+        ],
+        "result": {
+            "bleu": 0.3717981951393793,
+            "precisions": [
+                0.7433628318584071,
+                0.45794392523364486,
+                0.3069306930693069,
+                0.18947368421052632
+            ],
+            "brevity_penalty": 0.9911894845587822,
+            "length_ratio": 0.9912280701754386,
+            "translation_length": 113,
+            "reference_length": 114
+        }
+    },
+    {
+        "predictions": [
+            "STEP 01 Call the Equation Manager from the Tools ribbon tab and define the required variables. For example, to specify the value of variable M as 8mm, select Length as the type, input M as the name, and input 8 as the expression. Then, click Apply.",
+            "Equation Manager",
+            "STEP 02 Enter the required variables in the Variable Manager and click Apply as shown in Figure 11. All defined variables are recorded in the History Manager.",
+            "Note: There are four types of expressions: length, angle, constant and string. As for constants, their values are usually 0, 1 and 2, which are used for conditional suppression.",
+            "Enter the required variables"
+        ],
+        "reference": [
+            "STEP 01 Invoke the Equation Manager from the Tools Ribbon Tab and define the needed variables. For example, to specify the value of the variable M to be 8mm, just select Length as the Type and input M as the Name and 8 as the Expression. Then, click  and Apply.",
+            "Equation Manager",
+            "STEP 02 Input the needed variables in the Equation Manager and click Apply, as shown in Figure 11. All the defined variables are recorded in the History Manager.",
+            "Note: Generally, there are 4 types of expressions: Length, Angle, Constant, and String. As for constants, normally, their values are 0, 1, and 2, and they are used for conditional suppress. ",
+            "Inputting the Needed Variables"
+        ],
+        "result": {
+            "bleu": 0.429665524246732,
+            "precisions": [
+                0.7952755905511811,
+                0.5819672131147541,
+                0.39316239316239315,
+                0.25663716814159293
+            ],
+            "brevity_penalty": 0.9242800605047724,
+            "length_ratio": 0.927007299270073,
+            "translation_length": 127,
+            "reference_length": 137
+        }
+    }
+]

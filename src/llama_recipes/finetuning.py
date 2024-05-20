@@ -23,23 +23,24 @@ from transformers import (
 )
 from transformers.models.llama.modeling_llama import LlamaDecoderLayer
 
-from llama_recipes.configs import fsdp_config as FSDP_CONFIG
-from llama_recipes.configs import train_config as TRAIN_CONFIG
-from llama_recipes.data.concatenator import ConcatDataset
-from llama_recipes.policies import AnyPrecisionAdamW, apply_fsdp_checkpointing
+from src.llama_recipes.configs import fsdp_config as FSDP_CONFIG
+from src.llama_recipes.configs import train_config as TRAIN_CONFIG
+from src.llama_recipes.data.concatenator import ConcatDataset
+from src.llama_recipes.policies import AnyPrecisionAdamW, apply_fsdp_checkpointing
 
-from llama_recipes.utils import fsdp_auto_wrap_policy
-from llama_recipes.utils.config_utils import (
+from src.llama_recipes.utils.fsdp_utils import fsdp_auto_wrap_policy
+from src.llama_recipes.utils.config_utils import (
     update_config,
     generate_peft_config,
     generate_dataset_config,
     get_dataloader_kwargs,
 )
-from llama_recipes.utils.dataset_utils import get_preprocessed_dataset
+from src.llama_recipes.utils.dataset_utils import get_preprocessed_dataset
 
-from llama_recipes.utils.fsdp_utils import hsdp_device_mesh
-from llama_recipes.utils.train_utils import (
+from src.llama_recipes.utils.fsdp_utils import hsdp_device_mesh
+from src.llama_recipes.utils.train_utils import (
     train,
+    evaluation,
     freeze_transformer_layers,
     setup,
     setup_environ_flags,
@@ -57,7 +58,7 @@ def setup_wandb(train_config, fsdp_config, **kwargs):
             "You are trying to use wandb which is not currently installed. "
             "Please install it using pip install wandb"
         )
-    from llama_recipes.configs import wandb_config as WANDB_CONFIG
+    from src.llama_recipes.configs import wandb_config as WANDB_CONFIG
     wandb_config = WANDB_CONFIG()
     update_config(wandb_config, **kwargs)
     init_dict = dataclasses.asdict(wandb_config)
@@ -92,6 +93,11 @@ def main(**kwargs):
         clear_gpu_cache(local_rank)
         setup_environ_flags(rank)
 
+    os.environ["CUDA_VISIBLE_DEVICES"] = '1'
+    os.environ['HTTP_PROXY'] = 'http://127.0.0.1:2080'
+    os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:2080'
+    os.environ['ALL_PROXY'] = "socks5://127.0.0.1:2080"
+
     wandb_run = None
 
     if train_config.use_wandb:
@@ -125,7 +131,8 @@ def main(**kwargs):
         model = LlamaForCausalLM.from_pretrained(
             train_config.model_name,
             load_in_8bit=True if train_config.quantization else None,
-            device_map="auto" if train_config.quantization else None,
+            # device_map="auto" if train_config.quantization else None,
+            device_map=None,
             use_cache=use_cache,
             attn_implementation="sdpa" if train_config.use_fast_kernels else None,
         )
@@ -262,6 +269,15 @@ def main(**kwargs):
             weight_decay=train_config.weight_decay,
         )
     scheduler = StepLR(optimizer, step_size=1, gamma=train_config.gamma)
+
+    eval_ppl, eval_epoch_loss, temp_val_loss, temp_step_perplexity = evaluation(
+        model,
+        train_config,
+        eval_dataloader,
+        local_rank if train_config.enable_fsdp else None,
+        tokenizer,
+        wandb_run
+    )
 
     # Start the training process
     results = train(

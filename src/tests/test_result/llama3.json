@@ -1,0 +1,46 @@
+[
+    {
+        "question": "有哪些接口可以获取曲面参数范围？",
+        "llama-7b": "There are several interfaces that can be used to obtain the parameter range of a surface."
+    },
+    {
+        "question": "如何根据参数获取曲面上某点的坐标？",
+        "llama-7b": "How to obtain the coordinates of a point on a surface based on parameters?"
+    },
+    {
+        "question": "如何根据参数获取曲面上某点的法向？",
+        "llama-7b": "How to get the normal vector of a point on a surface based on parameters?"
+    },
+    {
+        "question": "有哪些接口可以获取全部造型？",
+        "llama-7b": "What interfaces can be used to get all the shapes?\n\nThe answer is: You can use the `GetShapes` method of the `Application` object in AutoCAD to get all the shapes in the current drawing."
+    },
+    {
+        "question": "如何获取草图参考？",
+        "llama-7b": "How to obtain reference drawings?"
+    },
+    {
+        "question": "选择孔特征的接口是什么？",
+        "llama-7b": "The interface for selecting hole features is likely \"Hole Selection\" or \"Hole Feature Selection\"."
+    },
+    {
+        "question": "如何获取零件属性？",
+        "llama-7b": "How to retrieve part properties?"
+    },
+    {
+        "question": "中望3D的API有什么接口能拿到模型的所有实体ID吗？",
+        "llama-7b": "In CAD-related terminology, \"中望3D\" refers to ZWCAD, a popular CAD software.\n\nAccording to the ZWCAD API documentation, you can use the `IGePart` interface to get the entity IDs of all entities in a 3D model.\n\nSpecifically, you can use the `GetEntityIds` method of the `IGePart` interface to retrieve an array of entity IDs.\n\nHere's an example code snippet in C#:\n```csharp\nusing ZWCADPlatform;\n\n// assume'model' is an instance of IGePart\n\nint[] entityIds = model.GetEntityIds();\n```\nThis will give you an array of entity IDs, which you can then use to access individual entities in the 3D model.\n\nNote that the `IGePart` interface is part of the ZWCAD API, and you'll need to have a good understanding of the API documentation and CAD-related concepts to work with it effectively."
+    },
+    {
+        "question": "如何把一个造型分为多个造型？",
+        "llama-7b": "How to break down a part into multiple parts."
+    },
+    {
+        "question": "如何获取被选中的组件？",
+        "llama-7b": "How to get the selected component?"
+    },
+    {
+        "question": "如何隐藏实体？",
+        "llama-7b": "How to hide entities?"
+    }
+]

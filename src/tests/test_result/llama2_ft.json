@@ -1,0 +1,46 @@
+[
+    {
+        "question": "有哪些接口可以获取曲面参数范围？",
+        "llama-7b": "What interfaces can I use to get the surface parameter range? "
+    },
+    {
+        "question": "如何根据参数获取曲面上某点的坐标？",
+        "llama-7b": "How to get the coordinates of a point on a surface based on parameters? "
+    },
+    {
+        "question": "如何根据参数获取曲面上某点的法向？",
+        "llama-7b": "How to get the law direction of a point on a surface based on parameters? "
+    },
+    {
+        "question": "有哪些接口可以获取全部造型？",
+        "llama-7b": "What interfaces can I use to get all shapes? "
+    },
+    {
+        "question": "如何获取草图参考？",
+        "llama-7b": "How to get a sketch reference? "
+    },
+    {
+        "question": "选择孔特征的接口是什么？",
+        "llama-7b": "What is the interface for selecting hole features? "
+    },
+    {
+        "question": "如何获取零件属性？",
+        "llama-7b": "How to get part attributes? "
+    },
+    {
+        "question": "中望3D的API有什么接口能拿到模型的所有实体ID吗？",
+        "llama-7b": "ZW3D API has what interfaces to get all the entity ID of the model? "
+    },
+    {
+        "question": "如何把一个造型分为多个造型？",
+        "llama-7b": "How to divide a shape into multiple shapes? "
+    },
+    {
+        "question": "如何获取被选中的组件？",
+        "llama-7b": "How to get the selected component? "
+    },
+    {
+        "question": "如何隐藏实体？",
+        "llama-7b": "How to Hide Entities? "
+    }
+]
